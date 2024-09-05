@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Gauge</title>
+    <!--
+    <link rel="stylesheet" href="styles.css">
+    -->
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(28, 31, 36, 0); /* Cambia este valor para ajustar la transparencia */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.gauge {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #7bffb5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #7bffb5;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.value {
+    font-size: 48px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">HOODE</h1>
+        <div class="gauge">
+            <div class="icon"></div>
+        </div>
+        <div class="value">62</div>
+    </div>
+</body>
+</html>

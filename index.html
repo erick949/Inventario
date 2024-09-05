@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-iframe Layout</title>
+    <style>
+        body {
+            background-color: #0f285ee5;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-rows: repeat(5, auto);
+            gap: 5px; /* Space between frames */
+        }
+        .row {
+            display: flex;
+            gap: 5px; /* Space between frames */
+        }
+        .frame {
+            border: none;
+            flex: 1; /* This will allow resizing while maintaining the aspect ratio */
+            height: 240px; /* Example height; you can adjust it according to the actual design */
+        }
+        .large {
+            flex: 2; /* Double width for the larger iframe */
+        }
+    </style>
+</head>
+<body>
+    <!-- First row with two iframes -->
+    <div class="row">
+        <iframe src="muestra.html" class="frame"></iframe>
+        <iframe src="indicador.html" class="frame"></iframe>
+        <iframe src="muestra.html" class="frame"></iframe>
+    </div>
+    
+    <!-- Second row with one large iframe -->
+    <div class="row">
+        <iframe src="Grafica.html" class="frame large"></iframe>
+    </div>
+    
+    <!-- Third row with three iframes -->
+    <div class="row">
+        <iframe src="ajustes.html" class="frame"></iframe>
+        <iframe src="ajustes.html" class="frame"></iframe>
+        <iframe src="ajustes.html" class="frame"></iframe>
+    </div>
+    
+    <!-- Fourth row with three iframes -->
+    <div class="row">
+        <iframe src="ajustes.html" class="frame"></iframe>
+        <iframe src="ajustes.html" class="frame"></iframe>
+        <iframe src="ajustes.html" class="frame"></iframe>
+    </div>
+    
+    <!-- Fifth row with three iframes -->
+    <div class="row">
+        <iframe src="ajustes.html" class="frame"></iframe>
+        <iframe src="ajustes.html" class="frame"></iframe>
+        <iframe src="ajustes.html" class="frame"></iframe>
+    </div>
+
+    <!-- Extra iframe at the bottom 
+    <div class="row">
+        <iframe src="Grafica.html" class="frame large"></iframe>
+    </div>
+    -->
+</body>
+</html>
