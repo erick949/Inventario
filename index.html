@@ -21,6 +21,16 @@
         .frame {
             border: none;
             flex: 1; /* This will allow resizing while maintaining the aspect ratio */
+            height: 280px; /* Example height; you can adjust it according to the actual design */
+        }
+        .frame_large {
+            border: none;
+            flex: 1; /* This will allow resizing while maintaining the aspect ratio */
+            height: 480px; /* Example height; you can adjust it according to the actual design */
+        }
+        .frame_short {
+            border: none;
+            flex: 1; /* This will allow resizing while maintaining the aspect ratio */
             height: 240px; /* Example height; you can adjust it according to the actual design */
         }
         .large {
@@ -38,7 +48,7 @@
     
     <!-- Second row with one large iframe -->
     <div class="row">
-        <iframe src="Grafica.html" class="frame large"></iframe>
+        <iframe src="Grafica.html" class="frame_large"></iframe>
     </div>
     
     <!-- Third row with three iframes -->
@@ -57,9 +67,9 @@
     
     <!-- Fifth row with three iframes -->
     <div class="row">
-        <iframe src="ajustes.html" class="frame"></iframe>
-        <iframe src="ajustes.html" class="frame"></iframe>
-        <iframe src="ajustes.html" class="frame"></iframe>
+        <iframe src="ajustes.html" class="frame_short"></iframe>
+        <iframe src="ajustes.html" class="frame_short"></iframe>
+        <iframe src="ajustes.html" class="frame_short"></iframe>
     </div>
 
     <!-- Extra iframe at the bottom 
